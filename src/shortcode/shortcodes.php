@@ -15,3 +15,9 @@
  **/
 
 namespace MaroonTechnologyLtd\CollapsibleContent;
+
+datashowicon=<?php esc_attrib_e ( $attributes['show_icon']);
+
+[qa_question= "What question would you like to ask me?" show_icon="" hide_icon=""]"This is the answer."[/qa_question]
+
+[teaser visible_message= "What question would you like to ask me?" show_icon="" hide_icon=""]This is the answer.[/teaser]
