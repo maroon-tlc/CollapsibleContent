@@ -57,9 +57,12 @@ You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-namespace MaroonTechnologyLtd\CollapsibleContent;
+//namespace MaroonTechnologyLtd\CollapsibleContent;
 
-function plugin_launch() {
+if ( ! defined( 'ABSPATH' ) ) {
 
-
+	die( "Oh, silly, there's nothing to see here.");
 }
+
+//echo 'made it into the plugin';
+include( __DIR__ . '/src/shortcode/shortcodes.php');
