@@ -51,6 +51,16 @@ function enqueue_assets() {
 			true
 			);
 
+		/*$script_parameters = array (
+			'showIcon' =>'dashicons dashicons-arrow-down-alt2',
+			'hideIcon' =>'dashicons dashicons-arrow-up-alt2'
+		);
+
+		wp_localize_script('collapsible-content-plugin-script',
+							'scriptParameters',
+							$script_parameters );
+		*/
+
 }
 
 /**
@@ -65,7 +75,7 @@ function autoload() {
 
 	foreach ( $sfiles as $file ) {
 
-		include(__DIR__ .'/' . $file );
+		include( __DIR__ . 'plugin.php/' . $file );
 
 
 	}
